@@ -8,6 +8,8 @@ const AppProvider = ({ children }) => {
     return localStorage.getItem('darkMode') === 'true'
   })
 
+  const [activeCategory, setactiveCategory] = useState("All")
+
   useEffect(() => {
     localStorage.setItem('darkMode', darkMode)
   }, [darkMode])
@@ -16,7 +18,9 @@ const AppProvider = ({ children }) => {
     <AppContext.Provider
       value={{
         darkMode,
-        setdarkMode
+        setdarkMode,
+        activeCategory,
+        setactiveCategory
       }}
     >
       {children}

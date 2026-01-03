@@ -4,12 +4,12 @@ import { AppContext } from '../../context/AppContext';
 
 const Navbar = () => {
 
-  // const [darkMode, setdarkMode] = useState(true)
-  const { darkMode , setdarkMode } = useContext(AppContext)
+  const { darkMode , setdarkMode } = useContext(AppContext);
+  const [isOpen, setisOpen] = useState(false)
   const NavItems = ["Journal", "Newsletter", "About", "Membership"];
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${darkMode ? 'bg-gray-900/80' : 'bg-white/80'} backdrop-blur-md border-b ${darkMode ? 'border-gray-800' : 'border-gray-100'}`}>
+    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${darkMode ? 'bg-gray-900/80' : 'bg-gray-400/20'} backdrop-blur-md border-b ${darkMode ? 'border-gray-800' : 'border-gray-300'}`}>
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
 
         {/* Logo */}
@@ -28,7 +28,7 @@ const Navbar = () => {
           <a 
           key={item} 
           href={item}
-          className={`text-sm font-medium transition-colors ${darkMode ? 'text-gray-400 hover:text-white' : 'text-gray-600 hover:text-black'}`}>
+          className={`text-2xs font-bold transition-colors ${darkMode ? 'text-gray-300 hover:text-white' : 'text-gray-700 hover:text-black'}`}>
             {item}
           </a>
         ))}
@@ -40,7 +40,6 @@ const Navbar = () => {
           <Search size={20} />
         </button>
         <button 
-          // onClick={toggleTheme}
           onClick={() => setdarkMode(!darkMode)}
           className={`p-2 rounded-full hover:cursor-pointer transition-colors ${darkMode ? 'hover:bg-gray-800 text-yellow-400' : 'hover:bg-gray-100 text-gray-600'}`}
         >
@@ -52,11 +51,24 @@ const Navbar = () => {
         <button className={`hidden md:block px-8 py-3 rounded-full font-semibold border hover:cursor-pointer transition-all ${darkMode ? 'border-gray-500 text-white hover:bg-gray-800' : 'border-gray-200 text-black hover:text-white hover:bg-black'}`}>
             Login
         </button>
-        <button className="md:hidden">
+        <button
+         className="md:hidden"
+         onClick={() => setisOpen(!isOpen)}
+         >
            <Menu size={24} className={darkMode ? 'text-white' : 'text-black'} />
         </button>
       </div>
 
+      {/* Mobile Categories */}
+      {
+        isOpen && <div className={`fixed w-full top-20 left-0 text-center shadow-xl ${darkMode ? 'bg-gray-800/80 text-gray-50' : 'bg-white/90 text-gray-900'}`}>
+        {
+          NavItems.map((item) => {
+            return <a onClick={() => setisOpen(false)} className={`block font-bold w-full py-4 border-b border-gray-100/40 ${darkMode ? 'active:bg-gray-900' : 'active:bg-gray-100'}`}>{item}</a>
+          })
+        }
+      </div>
+      }
 
       </div>
     </header>

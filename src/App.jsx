@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './index.css';
 import Layout from './Layout/Layout.jsx';
 import Home from './Pages/Home.jsx';
+import Temp from './Temp.jsx'
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
         </Route>
       </Routes>
     </BrowserRouter>
+    // <Temp />
   )
 }
 

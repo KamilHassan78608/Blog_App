@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "category": "Design",
+    "title": "The Renaissance of Brutalism in Digital Interfaces",
+    "excerpt": "Why modern web design is stripping away the polish to reveal raw, structural aesthetics.",
+    "author": "Alex Rivera",
+    "date": "Oct 12, 2024",
+    "readTime": "6 min",
+    "image": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop",
+    "content": "Minimalism has had its day. We are now entering an era where the raw, the unpolished, and the bold are taking center stage. Digital brutalism isn't just about ugliness; it's about honesty. It's about showing the grid lines, using default system fonts, and rejecting the sanitized corporate Memphis art style that dominated the 2010s...",
+    "likes": 124
+  },
+  {
+    "id": 2,
+    "category": "Technology",
+    "title": "Beyond the Screen: The Rise of Ambient Computing",
+    "excerpt": "When technology disappears into the background, interactions become magic.",
+    "author": "Sarah Chen",
+    "date": "Oct 10, 2024",
+    "readTime": "4 min",
+    "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2670&auto=format&fit=crop",
+    "content": "Imagine a world where you don't carry a phone, but the world around you answers your questions. Ambient computing is the concept of an environment saturated with computing power that is sensitive and responsive to the presence of people...",
+    "likes": 89
+  },
+  {
+    "id": 3,
+    "category": "Productivity",
+    "title": "Deep Work in a Distracted World",
+    "excerpt": "Reclaiming your cognitive capacity in an age of constant notifications.",
+    "author": "Marcus Aurelius II",
+    "date": "Oct 08, 2024",
+    "readTime": "8 min",
+    "image": "https://images.unsplash.com/photo-1499750310159-54f8f0506f84?q=80&w=2669&auto=format&fit=crop",
+    "content": "The ability to perform deep work is becoming increasingly rare at exactly the same time it is becoming increasingly valuable in our economy. As a consequence, the few who cultivate this skill, and then make it the core of their working life, will thrive...",
+    "likes": 210
+  },
+  {
+    "id": 4,
+    "category": "Culture",
+    "title": "Digital Nomads and the Gentrification of Paradise",
+    "excerpt": "The economic and social impact of remote work on local communities worldwide.",
+    "author": "Elena Gomez",
+    "date": "Oct 05, 2024",
+    "readTime": "5 min",
+    "image": "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?q=80&w=2574&auto=format&fit=crop",
+    "content": "From Bali to Lisbon, the influx of laptop-wielding workers is changing the fabric of cities. While they bring capital, they also drive up prices, pushing locals out of their own neighborhoods. Is there a sustainable middle ground?",
+    "likes": 156
+  },
+  {
+    "id": 5,
+    "category": "Future",
+    "title": "Synthetic Biology: Coding with DNA",
+    "excerpt": "How we are moving from reading the genome to writing it.",
+    "author": "Dr. Arinze Okafor",
+    "date": "Oct 01, 2024",
+    "readTime": "10 min",
+    "image": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?q=80&w=2670&auto=format&fit=crop",
+    "content": "We are on the cusp of a biological revolution. CRISPR was just the beginning. Now, we are looking at writing entirely new genetic sequences to create materials, medicines, and even data storage solutions that far outstrip silicon...",
+    "likes": 302
+  },
+  {
+    "id": 6,
+    "category": "Design",
+    "title": "Typography as Interface",
+    "excerpt": "When words become the primary navigation tool.",
+    "author": "Jessica Lee",
+    "date": "Sep 28, 2024",
+    "readTime": "3 min",
+    "image": "https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=2564&auto=format&fit=crop",
+    "content": "Big, bold type is taking over. It serves a dual purpose: it conveys the message and it structures the page. We are seeing a move away from icon-heavy interfaces to text-forward designs that prioritize clarity and voice...",
+    "likes": 95
+  }
+]
